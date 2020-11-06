@@ -1,0 +1,23 @@
+①queue 无序的队列 
+   插入和删除的时间复杂度为 o(1)
+   front()访问第一个元素
+   back()访问最后一个元素
+   push（）向队列尾部插入元素
+   push_back()
+   pop（）删除首个元素
+   pop_front() 返回
+
+
+②c++中priority_queue 有序的单向队列
+   priority_queue的函数列表与栈stack的函数列表是相同的
+   top()返回列表头部数据
+   push(elem) 再队列尾部增加数据
+   pop()队列头部数据出队
+   
+   empty()判断队列是否为空
+   size()返回队列中个数
+   有序队列实现实际就是最大堆（最小堆）
+   push→实际是push_heap(c.begin(),e.end(),comp)
+   pop→实际是pop_heap(c.begin,c.end(),comp)
+   而堆则是完全二叉树，每次弹出或插入时都会进行重新排序。
+   插入和删除的时间复杂度为 o(log2n)
