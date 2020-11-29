@@ -1,5 +1,5 @@
 ## 深度优先遍历
-	类似于水波纹扩散的算法，
+	
 	递归的模板
 	```
 	map<int, int> visited;
@@ -21,7 +21,7 @@
 
 ## 广度优先遍历
 	类似于水波纹扩散的算法，
-	递归的模板
+	模板
 	```
 	void bfs(Node* root) {
 	  map<int, int> visited;
