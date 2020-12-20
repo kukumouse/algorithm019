@@ -112,7 +112,44 @@
 ## 启发式搜索
 	股价函数，每搜索一步时候使用估价函数来找到最优的步骤。
 	A*搜索
+	```
+	class Node {
+	public:
+	    int x;
+	    int y;
+	    bool operator< (const Node &A) {
+		// 
+	    }
+	};
 
+	void generate_related_nodes(Node &node) {
+	    // 
+	}
+
+	void process(Node &node) {
+	    // 
+	}
+
+	void AstarSearch(vector<vector<int>>& graph, Node& start, Node& end) {
+	    vector<vector<bool> > visited(graph.size(), vector<bool>(graph[0].size(), false));
+	    priority_queue<Node> q;
+	    q.push(start);
+
+	    while (!q.empty()) {
+		Node cur = q.top();
+		q.pop();
+		visited[cur.x][cur.y] = true;
+
+
+		process(node);
+		vector<Node> nodes = generate_related_nodes(node) 
+		for (auto node : nodes) {
+		    if (!visited[node.x][node.y]) q.push(node);
+		}
+	    }
+
+	    return ;
+	}
 ## AVL树
 	平衡二叉树，在每次插入和删除时候去平衡树，在每个节点记录平衡因子，1，0，-1 
 	平衡因子 左树的高度 减去右树的高度 balance factor = {-1,0,1}
